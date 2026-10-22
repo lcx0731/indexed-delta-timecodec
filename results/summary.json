@@ -1,0 +1,464 @@
+{
+  "data": "Seeded synthetic sorted integer ticks; no external or personal data.",
+  "seed": 20261021,
+  "python": "3.13.0",
+  "zlib_runtime": "1.2.12",
+  "rows_per_dataset": 20000,
+  "queries_per_workload": 100,
+  "work_definition": "Payload bytes CRC-checked/decoded after metadata is already parsed; not disk I/O or time.",
+  "results": [
+    {
+      "dataset": "repeated_ticks",
+      "rows": 20000,
+      "raw_int64_bytes": 160000,
+      "monolithic_zlib_level6_bytes": 260,
+      "configs": [
+        {
+          "block_size": 64,
+          "encoded_bytes": 30983,
+          "metadata_bytes": 11296,
+          "payload_bytes": 19687,
+          "encoded_sha256": "ef118de8a8f42edbf6d9119365c895f1dac2db47c31e9a76fbaaa65f800b4f95",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 20000,
+                "candidate_blocks": 313,
+                "materialize_blocks_decoded": 313,
+                "materialize_payload_bytes_verified": 19687,
+                "count_blocks_decoded": 0,
+                "count_payload_bytes_verified": 0
+              },
+              "max_count_blocks_decoded": 0
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 20000,
+                "candidate_blocks": 313,
+                "materialize_blocks_decoded": 313,
+                "materialize_payload_bytes_verified": 19687,
+                "count_blocks_decoded": 0,
+                "count_payload_bytes_verified": 0
+              },
+              "max_count_blocks_decoded": 0
+            }
+          }
+        },
+        {
+          "block_size": 256,
+          "encoded_bytes": 22793,
+          "metadata_bytes": 2872,
+          "payload_bytes": 19921,
+          "encoded_sha256": "054a5aa4cfba8e0dbb058ac9b81aab9aba1675db78f4fb2273463368b4e36a4d",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 20000,
+                "candidate_blocks": 79,
+                "materialize_blocks_decoded": 79,
+                "materialize_payload_bytes_verified": 19921,
+                "count_blocks_decoded": 0,
+                "count_payload_bytes_verified": 0
+              },
+              "max_count_blocks_decoded": 0
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 20000,
+                "candidate_blocks": 79,
+                "materialize_blocks_decoded": 79,
+                "materialize_payload_bytes_verified": 19921,
+                "count_blocks_decoded": 0,
+                "count_payload_bytes_verified": 0
+              },
+              "max_count_blocks_decoded": 0
+            }
+          }
+        },
+        {
+          "block_size": 1024,
+          "encoded_bytes": 20728,
+          "metadata_bytes": 748,
+          "payload_bytes": 19980,
+          "encoded_sha256": "93e93c3f420850557f4592fb2d30964aa530a5757df4f11dc09c6b1bc7b0d980",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 20000,
+                "candidate_blocks": 20,
+                "materialize_blocks_decoded": 20,
+                "materialize_payload_bytes_verified": 19980,
+                "count_blocks_decoded": 0,
+                "count_payload_bytes_verified": 0
+              },
+              "max_count_blocks_decoded": 0
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 20000,
+                "candidate_blocks": 20,
+                "materialize_blocks_decoded": 20,
+                "materialize_payload_bytes_verified": 19980,
+                "count_blocks_decoded": 0,
+                "count_payload_bytes_verified": 0
+              },
+              "max_count_blocks_decoded": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "small_gaps",
+      "rows": 20000,
+      "raw_int64_bytes": 160000,
+      "monolithic_zlib_level6_bytes": 26877,
+      "configs": [
+        {
+          "block_size": 64,
+          "encoded_bytes": 30983,
+          "metadata_bytes": 11296,
+          "payload_bytes": 19687,
+          "encoded_sha256": "0d43f0b2904093fa56bdf4e4ed28ed3f2ee2816766e19c9bbe8289f467ac40ba",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 100.55,
+                "candidate_blocks": 2.59,
+                "materialize_blocks_decoded": 2.59,
+                "materialize_payload_bytes_verified": 162.85,
+                "count_blocks_decoded": 1.91,
+                "count_payload_bytes_verified": 120.01
+              },
+              "max_count_blocks_decoded": 2
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 10000.4,
+                "candidate_blocks": 157.27,
+                "materialize_blocks_decoded": 157.27,
+                "materialize_payload_bytes_verified": 9908.01,
+                "count_blocks_decoded": 1.97,
+                "count_payload_bytes_verified": 124.11
+              },
+              "max_count_blocks_decoded": 2
+            }
+          }
+        },
+        {
+          "block_size": 256,
+          "encoded_bytes": 22793,
+          "metadata_bytes": 2872,
+          "payload_bytes": 19921,
+          "encoded_sha256": "dec57b6b634bc3c2140b4eeb3914197fbf2fe02c0304d98f0f2e60deb8d5352a",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 100.55,
+                "candidate_blocks": 1.36,
+                "materialize_blocks_decoded": 1.36,
+                "materialize_payload_bytes_verified": 344.56,
+                "count_blocks_decoded": 1.36,
+                "count_payload_bytes_verified": 344.56
+              },
+              "max_count_blocks_decoded": 2
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 10000.4,
+                "candidate_blocks": 40.04,
+                "materialize_blocks_decoded": 40.04,
+                "materialize_payload_bytes_verified": 10210.2,
+                "count_blocks_decoded": 2,
+                "count_payload_bytes_verified": 510
+              },
+              "max_count_blocks_decoded": 2
+            }
+          }
+        },
+        {
+          "block_size": 1024,
+          "encoded_bytes": 20728,
+          "metadata_bytes": 748,
+          "payload_bytes": 19980,
+          "encoded_sha256": "144345afb7b0fdfc69b4bccb8a66055572c3ed5f8ab28b8227c2ed09ed9ad990",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 100.55,
+                "candidate_blocks": 1.15,
+                "materialize_blocks_decoded": 1.15,
+                "materialize_payload_bytes_verified": 1157.25,
+                "count_blocks_decoded": 1.15,
+                "count_payload_bytes_verified": 1157.25
+              },
+              "max_count_blocks_decoded": 2
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 10000.4,
+                "candidate_blocks": 10.68,
+                "materialize_blocks_decoded": 10.68,
+                "materialize_payload_bytes_verified": 10911.24,
+                "count_blocks_decoded": 2,
+                "count_payload_bytes_verified": 2031.6
+              },
+              "max_count_blocks_decoded": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "bursty_gaps",
+      "rows": 20000,
+      "raw_int64_bytes": 160000,
+      "monolithic_zlib_level6_bytes": 26158,
+      "configs": [
+        {
+          "block_size": 64,
+          "encoded_bytes": 30983,
+          "metadata_bytes": 11296,
+          "payload_bytes": 19687,
+          "encoded_sha256": "a4cad05375686ebfeadbea38073df840ba847a0320d4619bd1c3ece8e5c1a755",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 100.79,
+                "candidate_blocks": 2.54,
+                "materialize_blocks_decoded": 2.54,
+                "materialize_payload_bytes_verified": 160.02,
+                "count_blocks_decoded": 1.99,
+                "count_payload_bytes_verified": 125.37
+              },
+              "max_count_blocks_decoded": 2
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 10000.64,
+                "candidate_blocks": 157.22,
+                "materialize_blocks_decoded": 157.22,
+                "materialize_payload_bytes_verified": 9904.86,
+                "count_blocks_decoded": 1.97,
+                "count_payload_bytes_verified": 124.11
+              },
+              "max_count_blocks_decoded": 2
+            }
+          }
+        },
+        {
+          "block_size": 256,
+          "encoded_bytes": 22949,
+          "metadata_bytes": 2872,
+          "payload_bytes": 20077,
+          "encoded_sha256": "89d9b025e5eca2a1d681f38e5b06406df9d85d4e8d887ffd2575e867f5804696",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 100.79,
+                "candidate_blocks": 1.37,
+                "materialize_blocks_decoded": 1.37,
+                "materialize_payload_bytes_verified": 352.09,
+                "count_blocks_decoded": 1.37,
+                "count_payload_bytes_verified": 352.09
+              },
+              "max_count_blocks_decoded": 2
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 10000.64,
+                "candidate_blocks": 40.09,
+                "materialize_blocks_decoded": 40.09,
+                "materialize_payload_bytes_verified": 10303.13,
+                "count_blocks_decoded": 2,
+                "count_payload_bytes_verified": 514
+              },
+              "max_count_blocks_decoded": 2
+            }
+          }
+        },
+        {
+          "block_size": 1024,
+          "encoded_bytes": 21002,
+          "metadata_bytes": 748,
+          "payload_bytes": 20254,
+          "encoded_sha256": "5ce3d78404522ae877ab9fb98e1cf12b11dd518840ec03200f46f0c011ba5449",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 100.79,
+                "candidate_blocks": 1.16,
+                "materialize_blocks_decoded": 1.16,
+                "materialize_payload_bytes_verified": 1202.92,
+                "count_blocks_decoded": 1.16,
+                "count_payload_bytes_verified": 1202.92
+              },
+              "max_count_blocks_decoded": 2
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 10000.64,
+                "candidate_blocks": 10.7,
+                "materialize_blocks_decoded": 10.7,
+                "materialize_payload_bytes_verified": 11086.18,
+                "count_blocks_decoded": 2,
+                "count_payload_bytes_verified": 2064.28
+              },
+              "max_count_blocks_decoded": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "wide_gaps",
+      "rows": 20000,
+      "raw_int64_bytes": 160000,
+      "monolithic_zlib_level6_bytes": 159233,
+      "configs": [
+        {
+          "block_size": 64,
+          "encoded_bytes": 159686,
+          "metadata_bytes": 11296,
+          "payload_bytes": 148390,
+          "encoded_sha256": "339e2a6e01633e13685fd677d93efe9e5da6de5c139dd07c2a6a983ba8cccc56",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 100,
+                "candidate_blocks": 2.54,
+                "materialize_blocks_decoded": 2.54,
+                "materialize_payload_bytes_verified": 1206.27,
+                "count_blocks_decoded": 1.98,
+                "count_payload_bytes_verified": 940.54
+              },
+              "max_count_blocks_decoded": 2
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 10000,
+                "candidate_blocks": 157.19,
+                "materialize_blocks_decoded": 157.19,
+                "materialize_payload_bytes_verified": 74655.43,
+                "count_blocks_decoded": 1.98,
+                "count_payload_bytes_verified": 939.8
+              },
+              "max_count_blocks_decoded": 2
+            }
+          }
+        },
+        {
+          "block_size": 256,
+          "encoded_bytes": 153029,
+          "metadata_bytes": 2872,
+          "payload_bytes": 150157,
+          "encoded_sha256": "663b48b6cba7df595cee0dbc46820a04da29df6897d7e3b9972e3fbcbb17eacb",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 100,
+                "candidate_blocks": 1.36,
+                "materialize_blocks_decoded": 1.36,
+                "materialize_payload_bytes_verified": 2614.59,
+                "count_blocks_decoded": 1.36,
+                "count_payload_bytes_verified": 2614.59
+              },
+              "max_count_blocks_decoded": 2
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 10000,
+                "candidate_blocks": 40.08,
+                "materialize_blocks_decoded": 40.08,
+                "materialize_payload_bytes_verified": 77049.24,
+                "count_blocks_decoded": 1.99,
+                "count_payload_bytes_verified": 3826.73
+              },
+              "max_count_blocks_decoded": 2
+            }
+          }
+        },
+        {
+          "block_size": 1024,
+          "encoded_bytes": 151353,
+          "metadata_bytes": 748,
+          "payload_bytes": 150605,
+          "encoded_sha256": "5cb857e53f998a641fb47062d002cfee0a4061dcab7fa03f45e113eb4f647034",
+          "workloads": {
+            "narrow": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 100,
+                "candidate_blocks": 1.07,
+                "materialize_blocks_decoded": 1.07,
+                "materialize_payload_bytes_verified": 8178.71,
+                "count_blocks_decoded": 1.07,
+                "count_payload_bytes_verified": 8178.71
+              },
+              "max_count_blocks_decoded": 2
+            },
+            "broad": {
+              "queries": 100,
+              "mean": {
+                "matched_rows": 10000,
+                "candidate_blocks": 10.7,
+                "materialize_blocks_decoded": 10.7,
+                "materialize_payload_bytes_verified": 82305.78,
+                "count_blocks_decoded": 1.99,
+                "count_payload_bytes_verified": 15130.58
+              },
+              "max_count_blocks_decoded": 2
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "edge_cases": [
+    {
+      "name": "empty",
+      "values": [],
+      "raw_int64_bytes": 0,
+      "encoded_bytes": 28
+    },
+    {
+      "name": "singleton",
+      "values": [
+        0
+      ],
+      "raw_int64_bytes": 8,
+      "encoded_bytes": 64
+    },
+    {
+      "name": "full_int64_span",
+      "values": [
+        -9223372036854775808,
+        9223372036854775807
+      ],
+      "raw_int64_bytes": 16,
+      "encoded_bytes": 74
+    }
+  ]
+}
